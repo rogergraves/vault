@@ -1,24 +1,71 @@
-# README
+== Welcome to the Vault App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The Vault application is built on:
+ * Ruby 2.4.0
+ * Rails 5.0.1
+ * postgresql
+ * To be hosted by heroku with asset storage on AWS S3
+ * Code complexity and security monitoring to be done by CodeClimate
+ * Continuous Integration to be done by SemaphoreApp
+ 
+ == Getting started
+ 
+       $ git clone git@github.com:rogergraves/vault.git
+       $ cd vault
+       
+ At this point you should be prompted to install Ruby 2.4.0.
+ 
+       $ bundle
+       $ rake db:create
+       
+== Beginner's Guide to Changing Code
 
-Things you may want to cover:
+Every time you are ready to start work, do the following terminal commands in the wyzyr directory:
 
-* Ruby version
+        $ git smart-pull
+        $ bundle
+        $ rake db:migrate
+        $ rake db:test:prepare
+        $ rails server
 
-* System dependencies
+At this point you can point your browser to http://localhost:3000/ and start development work.
+To stop the server click CNTL-C.
 
-* Configuration
+To check to make sure your code changes didn't break anything critical:
 
-* Database creation
+        $ rspec
 
-* Database initialization
+Green dots are good, red F's are bad. Note that sometimes other people may have broken the build,
+so use your best judgement if the automated test errors were caused by your code or not (for example if you undo changes and re-run the test).
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+To push your code changes to the repo:
 
-* Deployment instructions
+        $ git add .
+        $ git commit -am "Message describing what changes you made [#XXXXXXX]"
+        $ git push origin master
 
-* ...
+Note: replace XXXXXXX with the pivotal tracker story ID (very important).
+
+If you run into problems pushing, it's probably because somebody pushed other commits between the time you last pulled and the current time that you want to push:
+
+        $ git smart-pull
+        $ git push origin master
+
+Switching between master and a private branch:
+
+        $ git checkout XXXXXX
+        $ git checkout master (to go back to master)
+
+where XXXXXX is the branch name. Then you'll want to use this branch name instead of master for things, i.e.
+
+        $ git pull origin XXXXXXX
+           or
+        $ git push origin XXXXXXX
+
+When you are ready to move your branch to master:
+
+        $ git checkout master
+        $ git merge XXXXXXX
+
+This will attempt to migrate your branch differences into master.
