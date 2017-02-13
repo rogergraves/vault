@@ -1,0 +1,48 @@
+
+<div id="myModal" class="modal fade " data-keyboard="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <!-- Заголовок модального окна -->
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">modal</h4>
+      </div>
+      <!-- Основное содержимое модального окна -->
+      <div class="modal-body" style="padding-top: 10px; text-align: center ">
+
+        <p>modal text</p>
+
+
+
+
+      </div>
+      <!-- Футер модального окна -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Closed</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<!-- Скрипт, привязывающий событие click, открывающее модальное окно, к элементам, имеющим класс .btn -->
+<script>
+    $(document).ready(function(){
+        //при нажатию на любую кнопку, имеющую класс .btn
+        $(".btn_myModal").click(function() {
+            //открыть модальное окно с id="myModal"
+            $("#myModal").modal('show');
+
+
+        });
+        $('#myModal').on('shown.bs.modal', function () {
+            //#myInput - id элемента, которому необходимо установить фокус
+            $('#query').focus();
+        })
+    });
+</script>

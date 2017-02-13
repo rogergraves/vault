@@ -8,9 +8,28 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-  <div class="container">
-    <%= yield %>
-  </div>
+  <body class="<%= Rails.env %>">
+
+
+
+
+  <%= render 'shared/nav/header' %>
+
+
+    <div class="container">
+
+
+
+          <%= render 'shared/nav/modal' %>
+          <%= render 'shared/nav/flash' if alert || notice %>
+          <%= yield %>
+
+
+    </div>
+
+
+
+  <%= render 'shared/nav/footer' %>
+
   </body>
 </html>
