@@ -45,7 +45,7 @@ To push your code changes to the repo:
         $ git commit -am "Message describing what changes you made [#XXXXXXX]"
         $ git push origin master
 
-Note: replace XXXXXXX with the pivotal tracker story ID (very important).
+Note: replace XXXXXXX with the pivotal tracker story ID (very important ).
 
 If you run into problems pushing, it's probably because somebody pushed other commits between the time you last pulled and the current time that you want to push:
 
