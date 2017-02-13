@@ -32,3 +32,4 @@ server.key
 /test/performance/jmeter.jmx
 /test/performance/jmeter.log
 .byebug_history
+database.yml
