@@ -53,6 +53,13 @@
   min-height: 400px;
 
 }
+.item_ico {
+  text-align: center;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  min-height: 80px;
+
+}
 
 .team_pic_fluid
 {
@@ -62,6 +69,14 @@
   padding-right: 5px;
 }
 
+.amenities
+{
+  width:  75px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 h1
 {
 
@@ -71,4 +86,7 @@ h1
 h3
 {
   padding-top: 10px;
+}
+p{
+  padding-bottom: 10px;
 }
