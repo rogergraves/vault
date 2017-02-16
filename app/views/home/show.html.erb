@@ -32,16 +32,51 @@ The Vault is a collaborative workspace and innovation hub founded on the princip
 <h1 class="orange">Resources</h1>
 <p>The Vault offers a host of resources to foster creativity, learning & collaboration.</p>
 
-Investment Advisors
+    <div class="row">
 
+    <div class="col-sm-6 col-md-3 col-lg-3">
+      <div class="thumbnail">
+        <div class="item_ico">
+          <%=image_tag(  "icons/ico_11.png",  class:'amenities')%>
+          <div class="caption">
+            <p>Investment Advisors</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-3 col-lg-3">
+    <div class="thumbnail">
+      <div class="item_ico">
+        <%=image_tag(  "icons/ico_14.png",  class:'amenities')%>
+        <div class="caption">
+          <p>In House Mentors</p>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="col-sm-6 col-md-3 col-lg-3">
+    <div class="thumbnail">
+      <div class="item_ico">
+        <%=image_tag(  "icons/ico_13.png",  class:'amenities')%>
+        <div class="caption">
+          <p>Document Library</p>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="col-sm-6 col-md-3 col-lg-3">
+      <div class="thumbnail">
+        <div class="item_ico">
+          <%=image_tag(  "icons/ico_12.png",  class:'amenities')%>
+          <div class="caption">
+            <p>Office Hours</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-In House Mentors
+    </div>
 
-
-Document Library
-
-
-Office Hours
 
 
   </div>
@@ -60,13 +95,16 @@ Office Hours
 
 
     <div class="d-flex justify-content-center">
-    <%= image_tag "photos/location.jpg", class: "d-block img-fluid"%>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.731875881181!2d-122.40454104994996!3d37.79632291859469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808ab3175d7b%3A0x2ed69a4d21ace193!2zNDE1IEphY2tzb24gU3QsIFNhbiBGcmFuY2lzY28sIENBIDk0MTExLCDQodCo0JA!5e0!3m2!1sru!2sua!4v1487282873613" width="1200" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
 
 <h1 class="orange">Photo Gallery</h1>
 
     <div class="d-flex justify-content-center">
-      <%= image_tag "photos/location.jpg", class: "d-block img-fluid"%>
+
+
+      <%= render 'home/photo_gallery' %>
+
 
     </div>
 
@@ -95,6 +133,10 @@ Office Hours
     <div class="d-flex justify-content-center">
     <button type="button" class="btn btn-warning">Events Inquiry</button>
     </div>
+    <!--Calendar google-->
+    <iframe src="https://calendar.google.com/calendar/embed?src=thesfvault.com_kgmccvpqtht9s99eiq52vhed8c%40group.calendar.google.com&ctz=America/Los_Angeles" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"> </iframe>
+    <!--End Calendar google -->
+
   </div>
 </div>
 <%= image_tag "photos/inside_photo_2.jpg", class: "d-block img-fluid full-screen"%>
@@ -103,11 +145,22 @@ Office Hours
 <div class="container">
   <div class="col-md-12">
 
-<h1 class="orange">Members</h1>
+
+
+    <h1 class="orange">Members</h1>
 
     <div class="d-flex justify-content-center">
-    <button type="button" class="btn btn-warning">Member Login</button>
+      <button type="button" class="btn btn-warning">Member Login</button>
     </div>
+
+
+    <h1 class="orange">From The Vault</h1>
+
+
+
+
+
+
 
     <h1 class="orange"> Careers </h1>
     <p> <strong>Want to join the team? We are currently recruiting for our Internship Program.</strong>
