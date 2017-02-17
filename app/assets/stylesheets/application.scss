@@ -68,7 +68,14 @@
   padding-left: 5px;
   padding-right: 5px;
 }
+.social
+{
 
+  font-size: 26px;
+  text-decoration: none;
+  color: rgb(227, 105, 0);
+
+}
 .amenities
 {
   width:  75px;
@@ -86,7 +93,20 @@ h1
 h3
 {
   padding-top: 10px;
+
 }
 p{
   padding-bottom: 10px;
+}
+
+a
+{
+  color: floralwhite;
+
+}
+
+a:hover, a:focus, a:active{
+  color: rgb(227, 105, 20);
+  text-decoration: none;
+  outline: none;
 }
