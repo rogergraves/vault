@@ -1,18 +1,14 @@
 
 
 
-<div class="carousel-item justify-content-center">
-<%21.times do |n|%>
+
+<%27.times do |n|%>
 
 
-      <div class="col-sm-6 col-md-4 col-lg-4">
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
         <div class="thumbnail">
-          <div class="item_max">
-            <%=link_to image_tag(  "team/1.jpg",  class:'team_pic_fluid'),:root%>
-            <div class="caption">
-              <h3 class="orange">Kevin Smith</h3>
-              <p>Founder</p>
-            </div>
+          <div class="members">
+            <%=link_to image_tag(  "members/#{(n+1).to_s.rjust(3, '0')}.jpg",  class:''),:root%>
           </div>
         </div>
       </div>
@@ -20,4 +16,3 @@
 
 
 <%end%>
-  </div>
