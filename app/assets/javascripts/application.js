@@ -16,5 +16,5 @@
 //= require turbolinks
 //= require tether
 //= require bootstrap
-
+//= require wow
 //= require_tree .

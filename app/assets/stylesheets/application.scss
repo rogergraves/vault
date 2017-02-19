@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  *= require font-awesome
+ *= require animate
  */
 @import "bootstrap";
 
@@ -33,7 +34,7 @@
 .full-screen
 {
   width: 100vw;
-  height:auto;
+
   padding-top: 40px;
   padding-bottom: 30px;
 }
@@ -135,3 +136,4 @@ p{
   padding-bottom: 10px;
 }
 
+.wow { visibility: hidden; }

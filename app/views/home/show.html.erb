@@ -1,9 +1,9 @@
-<div class="row justify-content-center" >
+<div class="wow fadeIn " data-wow-duration="2s">
 <%= render 'shared/nav/carousel_slide' %>
-</div>
-<br>
-<br>
 
+<br>
+<br>
+</div>
 
 <div class="container">
   <div class="col-md-12">
@@ -13,6 +13,8 @@ The Vault is a collaborative workspace and innovation hub founded on the princip
 
 <p class="orange">Email concierge@thesfvault.com to schedule a tour!</p>
 
+    <section class="wow slideInLeft"  >erthyreth</section>
+    <section class="wow slideInRight"  >erherh</section>
     <div class="row justify-content-center" >
 
 
@@ -87,8 +89,8 @@ The Vault is a collaborative workspace and innovation hub founded on the princip
 </div>
 
 
-<div class="d-flex justify-content-center row">
-<%= image_tag "photos/inside_photo_1.jpg", class: "d-block img-fluid full-screen"%>
+<div class="wow fadeIn " data-wow-duration="2s">
+<%= image_tag "photos/inside_photo_1.jpg", class: "d-block img-fluid full-screen "%>
 </div>
 
 
@@ -144,8 +146,8 @@ The Vault is a collaborative workspace and innovation hub founded on the princip
 
   </div>
 </div>
-<div class="row">
-<%= image_tag "photos/inside_photo_2.jpg", class: "d-block img-fluid full-screen"%>
+<div class="wow fadeIn " data-wow-duration="2s">
+<%= image_tag "photos/inside_photo_2.jpg", class: "d-block img-fluid full-screen wow fadeIn"%>
 </div>
 
 <div class="container">
@@ -181,7 +183,7 @@ The Vault is a collaborative workspace and innovation hub founded on the princip
 </div>
 
 
-<div class="row">
+<div class="wow fadeIn " data-wow-duration="2s">
 <%= image_tag "photos/inside_photo_3.jpg", class: "d-block img-fluid full-screen"%>
 </div>
 
@@ -224,3 +226,24 @@ The Vault is a collaborative workspace and innovation hub founded on the princip
 
   </div>
 </div>
+
+<script>
+
+    var wow = new WOW(
+        {
+            boxClass:     'wow',      // animated element css class (default is wow)
+            animateClass: 'animated', // animation css class (default is animated)
+            offset:       0,          // distance to the element when triggering the animation (default is 0)
+            mobile:       true,       // trigger animations on mobile devices (default is true)
+            live:         true,       // act on asynchronously loaded content (default is true)
+            callback:     function(box) {
+                // the callback is fired every time an animation is started
+                // the argument that is passed in is the DOM node being animated
+            },
+            scrollContainer: null // optional scroll container selector, otherwise use window
+        }
+    );
+    wow.init();
+
+
+</script>

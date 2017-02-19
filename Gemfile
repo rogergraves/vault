@@ -17,6 +17,8 @@ source 'https://rails-assets.org' do
 end
 
 gem "font-awesome-rails"
+gem "animate-rails"
+gem "wow-rails"
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
