@@ -1,6 +1,6 @@
 
 
-    <nav class="navbar fixed-top  navbar-light bg-faded">
+    <nav class="navbar fixed-top  navbar-light bg-faded" id="nav">
 
 
 
@@ -19,31 +19,31 @@
         <ul class="navbar-nav mr-auto " style="text-align: center">
 
           <li class="nav-item active">
-            <a class="nav-link" href="#">About Us <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#About_Us">About Us <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Amenities</a>
+            <a class="nav-link" href="#Amenities">Amenities</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">Location</a>
+            <a class="nav-link" href="#Location">Location</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Photo Gallery</a>
+            <a class="nav-link" href="#Photo_Gallery">Photo Gallery</a>
           </li>
           <li class="nav-item">
-          <a class="nav-link" href="#">Events</a>
+          <a class="nav-link" href="#Events">Events</a>
         </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Members</a>
+            <a class="nav-link" href="#Members">Members</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">From the Vault</a>
+            <a class="nav-link" href="#From_the_Vault">From the Vault</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">Team</a>
+            <a class="nav-link" href="#Team">Team</a>
           </li>
           <div class=" d-flex justify-content-center">
           <li class="nav-item " >
@@ -60,3 +60,76 @@
 
 
     </nav>
+
+
+    <script>
+        $(document).ready(function() {
+
+            var header = $("#nav"); // Меню
+            var scrollPrev = 0 // Предыдущее значение скролла
+
+            $(window).scroll(function() {
+                var scrolled = $(window).scrollTop(); // Высота скролла в px
+                var firstScrollUp = false; // Параметр начала сколла вверх
+                var firstScrollDown = false; // Параметр начала сколла вниз
+
+                // Если скроллим
+                if ( scrolled > 0 ) {
+                    // Если текущее значение скролла > предыдущего, т.е. скроллим вниз
+                    if ( scrolled > scrollPrev ) {
+                        firstScrollUp = false; // Обнуляем параметр начала скролла вверх
+                        // Если меню видно
+                        if ( scrolled < header.height() + header.offset().top ) {
+                            // Если только начали скроллить вниз
+                            if ( firstScrollDown === false ) {
+                                var topPosition = header.offset().top; // Фиксируем текущую позицию меню
+                                header.css({
+                                    "top": topPosition + "px"
+                                });
+                                firstScrollDown = true;
+                            }
+                            // Позиционируем меню абсолютно
+                            header.css({
+                                "position": "absolute"
+                            });
+                            // Если меню НЕ видно
+                        } else {
+                            // Позиционируем меню фиксированно вне экрана
+                            header.css({
+                                "position": "fixed",
+                                "top": "-" + header.height() + "px"
+                            });
+                        }
+
+                        // Если текущее значение скролла < предыдущего, т.е. скроллим вверх
+                    } else {
+                        firstScrollDown = false; // Обнуляем параметр начала скролла вниз
+                        // Если меню не видно
+                        if ( scrolled > header.offset().top ) {
+                            // Если только начали скроллить вверх
+                            if ( firstScrollUp === false ) {
+                                var topPosition = header.offset().top; // Фиксируем текущую позицию меню
+                                header.css({
+                                    "top": topPosition + "px"
+                                });
+                                firstScrollUp = true;
+                            }
+                            // Позиционируем меню абсолютно
+                            header.css({
+                                "position": "absolute"
+                            });
+                        } else {
+                            // Убираем все стили
+                            header.removeAttr("style");
+                        }
+                    }
+                    // Присваеваем текущее значение скролла предыдущему
+                    scrollPrev = scrolled;
+                }
+            });
+        });
+
+
+
+
+    </script>
