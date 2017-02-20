@@ -101,6 +101,25 @@
   outline: none;
 }
 
+a
+{
+  color: rgb(227, 105, 20);
+
+}
+
+a:hover, a:focus, a:active{
+  color: rgb(249, 109, 20);
+
+}
+
+
+
+ .nav-link :hover{
+  color: rgb(227, 105, 20);
+  text-decoration: none;
+  outline: none;
+}
+
 
 .amenities
 {
@@ -127,12 +146,13 @@ h1
   padding-top: 40px;
   padding-bottom: 20px;
 }
-h3
+h3, h6
 {
   padding-top: 10px;
 
 }
 p{
+  text-align: justify;
   padding-bottom: 10px;
 }
 

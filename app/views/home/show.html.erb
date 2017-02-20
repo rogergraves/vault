@@ -8,44 +8,43 @@
 <div class="container">
   <div class="col-md-12">
 
-<h1 class="orange" id="About_Us">Let's CO!</h1>
-The Vault is a collaborative workspace and innovation hub founded on the principle that people work better together. We offer state-of-the-art workspaces, resources, talent, knowledge and networks to help startups grow better and faster.
+<h1 class="orange wow fadeInLeft" id="About_Us">Let's CO!</h1>
+    <p class=" wow fadeInRight" >The Vault is a collaborative workspace and innovation hub founded on the principle that people work better together. We offer state-of-the-art workspaces, resources, talent, knowledge and networks to help startups grow better and faster.
 
-<p class="orange">Email concierge@thesfvault.com to schedule a tour!</p>
-
-    <section class="wow slideInLeft"  >erthyreth</section>
-    <section class="wow slideInRight"  >erherh</section>
-    <div class="row justify-content-center" >
+    <br><span class="orange">Email <a href="mailto:concierge@thesfvault.com?subject=To%20schedule%20a%20tour">concierge@thesfvault.com</a> to schedule a tour!</span></p>
 
 
-      <video style="max-width: 80vw;min-width: 80vw; max-height: 45vw; min-height:  45vw; background-color: #000;">
-        <source src="video/The_SF_Vault.mp4">
+    <div class="row justify-content-center wow fadeIn" >
+      <video loop class="slide__video js-video" preload="auto" muted="muted" style="max-width: 80vw;min-width: 80vw; max-height: 45vw; min-height:  45vw; background-color: #000;">
+        <source src="<%= asset_path('videos/The_SF_Vault.mp4') %>" type="video/mp4" />
+        Your browser does not support the video tag. I suggest you upgrade your browser.
       </video>
     </div>
 
-<h1 class="orange" id="Amenities">Amenities</h1>
-    <p>The Vault offers a host of amenities to foster creativity, learning & collaboration.</p>
+
+<h1 class="orange wow fadeInLeft" id="Amenities">Amenities</h1>
+    <p class=" wow fadeInRight">The Vault offers a host of amenities to foster creativity, learning & collaboration.</p>
 
 
 
-    <div class="row justify-content-center" >
+    <div class="row justify-content-center wow zoomInDown" >
       <%= render 'home/amenities' %>
     </div>
 
 
 
 
-<h1 class="orange" id="Resources">Resources</h1>
-<p>The Vault offers a host of resources to foster creativity, learning & collaboration.</p>
+<h1 class="orange  wow fadeInLeft" id="Resources">Resources</h1>
+<p class=" wow fadeInRight">The Vault offers a host of resources to foster creativity, learning & collaboration.</p>
 
-    <div class="row">
+    <div class="row wow fadeInUp">
 
     <div class="col-sm-6 col-md-3 col-lg-3">
       <div class="thumbnail">
         <div class="item_ico">
           <%=image_tag(  "icons/ico_11.png",  class:'amenities')%>
           <div class="caption">
-            <p>Investment Advisors</p>
+            <h6>Investment Advisors</h6>
           </div>
         </div>
       </div>
@@ -55,7 +54,7 @@ The Vault is a collaborative workspace and innovation hub founded on the princip
       <div class="item_ico">
         <%=image_tag(  "icons/ico_14.png",  class:'amenities')%>
         <div class="caption">
-          <p>In House Mentors</p>
+          <h6>In House Mentors</h6>
         </div>
       </div>
     </div>
@@ -65,7 +64,7 @@ The Vault is a collaborative workspace and innovation hub founded on the princip
       <div class="item_ico">
         <%=image_tag(  "icons/ico_13.png",  class:'amenities')%>
         <div class="caption">
-          <p>Document Library</p>
+          <h6>Document Library</h6>
         </div>
       </div>
     </div>
@@ -75,7 +74,7 @@ The Vault is a collaborative workspace and innovation hub founded on the princip
         <div class="item_ico">
           <%=image_tag(  "icons/ico_12.png",  class:'amenities')%>
           <div class="caption">
-            <p>Office Hours</p>
+            <h6>Office Hours</h6>
           </div>
         </div>
       </div>
@@ -96,16 +95,16 @@ The Vault is a collaborative workspace and innovation hub founded on the princip
 
 <div class="container">
   <div class="col-md-12">
-<h1 class="orange" id="Location">Location</h1>
-<p>The SF Vault is located in Jackson Square - once the frontline of the Barbary Coast - amidst art galleries, boutiques, antique dealers and fine dining. The space boasts a rich history as the original home of the Ghiradelli chocolate factory in 1851. The location, which once served as home to one of San Francisco's most successful companies, has been redesigned once again as a home for innovation.</p>
+<h1 class="orange  wow fadeInLeft" id="Location">Location</h1>
+<p class=" wow fadeInRight">The SF Vault is located in Jackson Square - once the frontline of the Barbary Coast - amidst art galleries, boutiques, antique dealers and fine dining. The space boasts a rich history as the original home of the Ghiradelli chocolate factory in 1851. The location, which once served as home to one of San Francisco's most successful companies, has been redesigned once again as a home for innovation.</p>
 
 
-    <div class="d-flex justify-content-center">
-      <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.731875881181!2d-122.40454104994996!3d37.79632291859469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808ab3175d7b%3A0x2ed69a4d21ace193!2zNDE1IEphY2tzb24gU3QsIFNhbiBGcmFuY2lzY28sIENBIDk0MTExLCDQodCo0JA!5e0!3m2!1sru!2sua!4v1487282873613" width="1200" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+    <div class="d-flex justify-content-center wow zoomInDown">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.731875881181!2d-122.40454104994996!3d37.79632291859469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808ab3175d7b%3A0x2ed69a4d21ace193!2zNDE1IEphY2tzb24gU3QsIFNhbiBGcmFuY2lzY28sIENBIDk0MTExLCDQodCo0JA!5e0!3m2!1sru!2sua!4v1487282873613" width="1200" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
 
 
-<h1 class="orange"id="Photo_Gallery">Photo Gallery</h1>
+<h1 class="orange  wow fadeInLeft"id="Photo_Gallery">Photo Gallery</h1>
 
     <div class="d-flex justify-content-center">
 
@@ -115,12 +114,12 @@ The Vault is a collaborative workspace and innovation hub founded on the princip
 
     </div>
 
-    <h1 class="orange" id="Events">Events</h1>
-    <p>Host Your Next Event at The Vault
+    <h1 class="orange  wow fadeInLeft" id="Events">Events</h1>
+    <p class=" wow fadeInRight">Host Your Next Event at The Vault
     <br>The Vault offers a public event space suitable for a range of events: seminars, panels, workshops, meetups, happy hours and pitch nights.</p>
 
 
-
+    <div class="wow fadeInLeft">
 
      <ul class="cristal">2,000 sq ft of event space </ul>
 
@@ -135,15 +134,16 @@ The Vault is a collaborative workspace and innovation hub founded on the princip
      <ul class="cristal">In house production and marketing assistance </ul>
 
      <ul class="cristal">Use of bar area </ul>
-
+    </div>
 
     <div class="d-flex justify-content-center">
     <button type="button" class="btn btn-warning">Events Inquiry</button>
     </div>
-    <!--Calendar google-->
-    <!--<iframe src="https://calendar.google.com/calendar/embed?src=thesfvault.com_kgmccvpqtht9s99eiq52vhed8c%40group.calendar.google.com&ctz=America/Los_Angeles" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"> </iframe>-->
-    <!--End Calendar google -->
-
+        <div class="  wow   zoomInDown">
+            <!--Calendar google-->
+            <iframe src="https://calendar.google.com/calendar/embed?src=thesfvault.com_kgmccvpqtht9s99eiq52vhed8c%40group.calendar.google.com&ctz=America/Los_Angeles" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"> </iframe>
+            <!--End Calendar google-->
+    </div>
   </div>
 </div>
 <div class="wow fadeIn " data-wow-duration="2s">
@@ -155,10 +155,10 @@ The Vault is a collaborative workspace and innovation hub founded on the princip
 
 
 
-    <h1 class="orange" id="Members">Members</h1>
+    <h1 class="orange  wow fadeInLeft" id="Members">Members</h1>
 
 
-    <div class="row justify-content-center">
+    <div class="row justify-content-center wow zoomInDown">
       <%= render 'home/members' %>
     </div>
 
@@ -167,7 +167,7 @@ The Vault is a collaborative workspace and innovation hub founded on the princip
     </div>
 
 
-    <h1 class="orange" id="From_The_Vault">From The Vault</h1>
+    <h1 class="orange  wow fadeInLeft" id="From_The_Vault">From The Vault</h1>
 
 
 
@@ -175,9 +175,9 @@ The Vault is a collaborative workspace and innovation hub founded on the princip
 
 
 
-    <h1 class="orange" id="Careers" > Careers </h1>
-    <p> <strong>Want to join the team? We are currently recruiting for our Internship Program.</strong>
-    <br>Send your resume to careers@thesfvault.com</p>
+    <h1 class="orange wow fadeInLeft" id="Careers" > Careers </h1>
+    <p class=" wow fadeInRight"> <strong>Want to join the team? We are currently recruiting for our Internship Program.</strong>
+      <br> <span class="orange">Send your resume to <a href="mailto:careers@thesfvault.com?subject=Want%20to%20join%20the%20team">careers@thesfvault.com</a></span></p>
 
   </div>
 </div>
@@ -190,7 +190,7 @@ The Vault is a collaborative workspace and innovation hub founded on the princip
 
 <div class="container">
   <div class="col-md-12">
-    <h1 class="orange" id="Team">Team</h1>
+    <h1 class="orange wow fadeInLeft" id="Team">Team</h1>
 
   </div>
 </div>
@@ -201,24 +201,25 @@ The Vault is a collaborative workspace and innovation hub founded on the princip
 
 <div class="container">
   <div class="col-md-12">
-    <h1 class="orange">Advisors</h1>
+    <h1 class="orange  wow fadeInLeft">Advisors</h1>
 
     <p class="orange"></p>
     <p class="orange"></p>
     <p class="orange"></p>
 
-
+  <div class=" wow fadeInRight">
     <%=link_to 'Daniel Park','https://www.linkedin.com/in/daniel-park-37a05092/en', target:"_blank" , class:"orange offset-sm-1"%>
     <%=link_to 'Paul Kallmes','https://www.linkedin.com/in/paul-kallmes-8a0376' , target:"_blank", class:"orange offset-sm-1"%>
     <%=link_to 'Sean Cho',:root, target:"_blank" , class:"orange offset-sm-1"%>
+  </div>
 
 
 
+    <h1 class="orange wow fadeInLeft">Contact</h1>
 
-    <h1 class="orange">Contact</h1>
 
-    <p>Email us at concierge@thesfvault.com</p>
-    <p><strong>Give us a call at (415) 908-1010</strong></p>
+    <p class=" wow fadeInRight"><strong>Give us a call at (415) 908-1010</strong></p>
+    <p class=" orange wow fadeInLeft">Email us at <a href="mailto:concierge@thesfvault.com">concierge@thesfvault.com</a></p>
 
 
 
