@@ -1,13 +1,13 @@
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner" role="listbox" style="max-width: 80vw;min-width: 80vw; max-height: 45vw; min-height:  45vw; background-color: #000;" >
-    <div class="carousel-item active justify-content-center" >
+    <div class="carousel-item active " >
       <%= image_tag "photo_gallery/005.jpg", class: "d-block img-fluid ",  alt: "Slide num 1" %>
     </div>
 
 
     <%21.times do |n|%>
-        <div class="carousel-item justify-content-center">
-          <%= image_tag "photo_gallery/#{(n+1).to_s.rjust(3, '0')}.jpg", class: "d-block img-fluid ",  alt: "Slide num #{n+1}" %>
+        <div class="carousel-item ">
+          <%= image_tag "photo_gallery/#{(n+1).to_s.rjust(3, '0')}.jpg", class: "",  alt: "Slide num #{n+1}" %>
         </div>
     <%end%>
 

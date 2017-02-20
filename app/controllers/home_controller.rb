@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def show
-    @text = 'Hello'
+# raise
   end
 end

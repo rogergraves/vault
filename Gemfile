@@ -16,9 +16,9 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
 end
 
-gem "font-awesome-rails"
-gem "animate-rails"
-gem "wow-rails"
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.1'
+gem 'animate-rails', '~> 1.0', '>= 1.0.10'
+gem 'wow-rails', '~> 0.0.1'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
@@ -27,7 +27,11 @@ gem 'jbuilder', '~> 2.5'
 
 group :development, :test do
   gem 'byebug', platform: :mri
+  gem 'rspec-rails', '~> 3.5'
+  gem 'rails-controller-testing'
 end
+
+
 
 group :development do
   gem 'web-console', '>= 3.3.0'
