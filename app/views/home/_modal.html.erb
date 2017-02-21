@@ -1,0 +1,137 @@
+
+
+<div class="modal fade" id="memberModal" data-keyboard="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h2 >Apply Here.</h2>
+        <%=text_field_tag 'first_mame',  nil, placeholder: 'first name',class: 'special_input' %>
+        <%=text_field_tag 'last_mame',  nil, placeholder: 'last name',class: 'special_input' %>
+        <%=email_field_tag 'email', nil, placeholder: 'email',class: 'special_input' %>
+        <%=text_field_tag 'company_mame',  nil, placeholder: 'company name',class: 'special_input' %>
+        <%=text_field_tag 'number',  nil, placeholder: 'number of people',class: 'special_input' %>
+        <%=datetime_field_tag 'date', nil, class: 'special_input'%>
+        <%=text_area_tag 'comments',  nil, placeholder: 'comments',class: 'comments' %>
+
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning">REQUEST EVENT</button>
+        <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="eventModal" data-keyboard="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h2>Request Event.</h2>
+        <%=text_field_tag 'first_mame',  nil, placeholder: 'first name',class: 'special_input' %>
+        <%=text_field_tag 'last_mame',  nil, placeholder: 'last name',class: 'special_input' %>
+        <%=email_field_tag 'email', nil, placeholder: 'email',class: 'special_input' %>
+        <%=text_field_tag 'company_mame',  nil, placeholder: 'company name',class: 'special_input' %>
+        <%=text_field_tag 'number',  nil, placeholder: 'number of people',class: 'special_input' %>
+        <%=datetime_field_tag 'date', nil, placeholder: 'date time',class: 'special_input'%>
+
+        <%=text_area_tag 'comments',  nil, placeholder: 'comments',class: 'comments' %>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="mailing_listModal" data-keyboard="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content ">
+      <div class="modal-header">
+        <h5 class="modal-title">Join the Vault Community</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+            <div class=" input-modal-mail">
+                <%=text_field_tag 'first_mame',  nil, placeholder: 'first name',class: 'special_input' %>
+                <%=text_field_tag 'last_mame',  nil, placeholder: 'last name',class: 'special_input' %>
+                <%=email_field_tag 'email', nil, placeholder: 'email',class: 'special_input' %>
+
+
+
+            </div>
+
+      </div>
+      <div class="modal-footer ">
+        <button type="button" class="btn btn-warning">APPLY NOW</button>
+        <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Скрипт, привязывающий событие click, открывающее модальное окно, к элементам, имеющим класс .btn -->
+<script>
+    $(document).ready(function(){
+
+        $(".event").click(function() {
+            //открыть модальное окно с id="myModal"
+//            alert('aletr');
+            $("#eventModal").modal('show');
+
+//
+        });
+//        $('#iventModal').on('shown.bs.modal', function () {
+//            //#myInput - id элемента, которому необходимо установить фокус
+//            $('#btn').focus();
+//        });
+
+        $(".member").click(function() {
+            //открыть модальное окно с id="myModal"
+            $("#memberModal").modal('show');
+
+
+        });
+//        $('#memberModal').on('shown.bs.modal', function () {
+//            //#myInput - id элемента, которому необходимо установить фокус
+//            $('#query').focus();
+//        });
+
+        $(".mailing_list").click(function() {
+            //открыть модальное окно с id="myModal"
+            $("#mailing_listModal").modal('show');
+
+
+        });
+        $('#mailing_listModal').on('shown.bs.modal', function () {
+            //#myInput - id элемента, которому необходимо установить фокус
+            $('#first_name').focus();
+        });
+
+
+    });
+</script>

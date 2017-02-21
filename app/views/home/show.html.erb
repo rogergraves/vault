@@ -3,8 +3,10 @@
 
 <br>
 <br>
-</div>
 
+
+</div>
+<%= render 'modal' %>
 <div class="container">
   <div class="col-md-12">
 
@@ -140,7 +142,9 @@
     </div>
 
     <div class="d-flex justify-content-center">
-    <button type="button" class="btn btn-warning">Events Inquiry</button>
+
+      <%= link_to 'Events Inquiry', '#event',class:"btn btn-warning event", onclick: "return false"%>
+
     </div>
         <div class="  wow   zoomInDown">
             <!--Calendar google-->
@@ -166,7 +170,8 @@
     </div>
 
     <div class="d-flex justify-content-center">
-      <button type="button" class="btn btn-warning">Member Login</button>
+      <!--<button type="button" class="btn btn-warning">Member Login</button>-->
+      <%= link_to 'Member Login','http://thesfvault.spaces.nexudus.com/en' ,class:"btn btn-warning"%>
     </div>
 
 
