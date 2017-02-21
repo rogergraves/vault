@@ -15,10 +15,13 @@
 
 
     <div class="row justify-content-center wow fadeIn" >
-      <video loop class="slide__video js-video" preload="auto" muted="muted" style="max-width: 80vw;min-width: 80vw; max-height: 45vw; min-height:  45vw; background-color: #000;">
-        <source src="<%= asset_path('videos/The_SF_Vault.mp4') %>" type="video/mp4" />
-        Your browser does not support the video tag. I suggest you upgrade your browser.
-      </video>
+      <!--<video loop class="slide__video js-video" preload="auto" muted="muted" style="max-width: 80vw;min-width: 80vw; max-height: 45vw; min-height:  45vw; background-color: #000;">-->
+        <!--<source src="<%= asset_path('videos/The_SF_Vault.mp4') %>" type="video/mp4" />-->
+        <!--Your browser does not support the video tag. I suggest you upgrade your browser.-->
+      <!--</video>-->
+      <%=video_tag('The_SF_Vault.mp4', controls: true, autobuffer: true)%>
+
+
     </div>
 
 
