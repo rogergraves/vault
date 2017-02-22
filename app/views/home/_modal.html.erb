@@ -1,30 +1,83 @@
-
-
 <div class="modal fade" id="memberModal" data-keyboard="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Modal title</h5>
+        <h5 class="modal-title">Apply Here.</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <h2 >Apply Here.</h2>
-        <%=text_field_tag 'first_mame',  nil, placeholder: 'first name',class: 'special_input' %>
-        <%=text_field_tag 'last_mame',  nil, placeholder: 'last name',class: 'special_input' %>
-        <%=email_field_tag 'email', nil, placeholder: 'email',class: 'special_input' %>
-        <%=text_field_tag 'company_mame',  nil, placeholder: 'company name',class: 'special_input' %>
-        <%=text_field_tag 'number',  nil, placeholder: 'number of people',class: 'special_input' %>
-        <%=datetime_field_tag 'date', nil, class: 'special_input'%>
-        <%=text_area_tag 'comments',  nil, placeholder: 'comments',class: 'comments' %>
+        <form>
+          <div class="form-group">
+            <%= text_field_tag 'first_name', nil, placeholder: 'First name', class: 'form-control' %>
+          </div>
+          <div class="form-group">
+            <%= text_field_tag 'last_name', nil, placeholder: 'Last name', class: 'form-control' %>
+          </div>
+          <div class="form-group">
+            <%= email_field_tag 'email', nil, placeholder: 'Email', class: 'form-control' %>
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <%= text_field_tag 'company_name', nil, placeholder: 'Company name', class: 'form-control' %>
+          </div>
+          <div class="form-group">
+            <%= text_area_tag 'company_description', nil, placeholder: 'Company description', class: 'form-control' %>
+          </div>
+          <div class="form-group">
+            <%= text_field_tag 'first_name', nil, placeholder: 'Advisors', class: 'form-control' %>
+          </div>
+          <div class="form-group">
+            <%= text_field_tag 'last_name', nil, placeholder: 'Current investors', class: 'form-control' %>
+          </div>
+          <div class="form-group">
+            <%= text_field_tag 'first_name', nil, placeholder: 'Date founded', class: 'form-control' %>
+          </div>
+          <div class="form-group">
+            <%= text_field_tag 'last_name', nil, placeholder: 'Initial product launch date', class: 'form-control' %>
+          </div>
+          <div class="form-group">
+            <%= text_area_tag 'company_description', nil, placeholder: 'Founder bios', class: 'form-control' %>
+          </div>
+          <div class="form-group">
+            <%= text_field_tag 'first_name', nil, placeholder: 'Website', class: 'form-control' %>
+          </div>
+          <div class="form-group">
+            <%= text_field_tag 'last_name', nil, placeholder: 'Industry', class: 'form-control' %>
+          </div>
 
+          <div class="form-group">
+              <select class="form-control" id="Select1">
+                <option value="Bootstrapped">Bootstrapped</option>
+                <option value="Angel/Seed">Angel/Seed</option>
+                <option value="Series A">Series A</option>
+                <option value="Series B and Beyond">Series B and Beyond</option>
+            </select>
+          </div>
 
+          <div class="form-group">
+            <%= text_field_tag 'first_name', nil, placeholder: '# of desks needed', class: 'form-control' %>
+          </div>
+          <div class="form-group">
+            <%= text_field_tag 'last_name', nil, placeholder: 'Proposed move in date', class: 'form-control' %>
+          </div>
+          <div class="form-group">
+            <%= text_area_tag 'company_description', nil, placeholder: 'Please list dates and times you are available to take a tour', class: 'form-control' %>
+          </div>
+          <div class="form-group">
+            <%= text_area_tag 'company_description', nil, placeholder: 'Why do you want to join the vault', class: 'form-control' %>
+          </div>
+          <div class="form-group">
+            <%= text_field_tag 'referred_by', nil, placeholder: 'Referred by', class: 'form-control' %>
+          </div>
+
+        </form>
 
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-warning">REQUEST EVENT</button>
-        <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
+        <button type="button" class="btn btn-warning">APPLY NOW</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
@@ -36,26 +89,43 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Modal title</h5>
+        <h5 class="modal-title">Request Event</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <h2>Request Event.</h2>
-        <%=text_field_tag 'first_mame',  nil, placeholder: 'first name',class: 'special_input' %>
-        <%=text_field_tag 'last_mame',  nil, placeholder: 'last name',class: 'special_input' %>
-        <%=email_field_tag 'email', nil, placeholder: 'email',class: 'special_input' %>
-        <%=text_field_tag 'company_mame',  nil, placeholder: 'company name',class: 'special_input' %>
-        <%=text_field_tag 'number',  nil, placeholder: 'number of people',class: 'special_input' %>
-        <%=datetime_field_tag 'date', nil, placeholder: 'date time',class: 'special_input'%>
-
-        <%=text_area_tag 'comments',  nil, placeholder: 'comments',class: 'comments' %>
-
+        <form>
+          <div class="form-group">
+            <%= text_field_tag 'first_name', nil, placeholder: 'First name', class: 'form-control' %>
+          </div>
+          <div class="form-group">
+            <%= text_field_tag 'last_name', nil, placeholder: 'Last name', class: 'form-control' %>
+          </div>
+          <div class="form-group">
+            <%= email_field_tag 'email', nil, placeholder: 'Email', class: 'form-control' %>
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <%= text_field_tag 'company_name', nil, placeholder: 'Company name', class: 'form-control' %>
+          </div>
+          <div class="form-group">
+            <%= text_field_tag 'number', nil, placeholder: 'Number of people', class: 'form-control' %>
+          </div>
+          <div class="form-group">
+            <%= date_field_tag 'date', nil, placeholder: 'Date', class: 'form-control' %>
+          </div>
+          <div class="form-group">
+            <%= time_field_tag 'time', nil, placeholder: 'Time', class: 'form-control' %>
+          </div>
+          <div class="form-group">
+            <%= text_area_tag 'comments', nil, placeholder: 'Comments', class: 'form-control' %>
+          </div>
+        </form>
 
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-warning">REQUEST EVENT</button>
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
     </div>
@@ -73,19 +143,25 @@
         </button>
       </div>
       <div class="modal-body">
-            <div class=" input-modal-mail">
-                <%=text_field_tag 'first_mame',  nil, placeholder: 'first name',class: 'special_input' %>
-                <%=text_field_tag 'last_mame',  nil, placeholder: 'last name',class: 'special_input' %>
-                <%=email_field_tag 'email', nil, placeholder: 'email',class: 'special_input' %>
 
+        <form>
+          <div class="form-group">
+            <%= text_field_tag 'first_name', nil, placeholder: 'First name', class: 'form-control' %>
+          </div>
+          <div class="form-group">
+            <%= text_field_tag 'last_name', nil, placeholder: 'Last name', class: 'form-control' %>
+          </div>
+          <div class="form-group">
+            <%= email_field_tag 'email', nil, placeholder: 'Email', class: 'form-control' %>
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+        </form>
 
-
-            </div>
 
       </div>
       <div class="modal-footer ">
         <button type="button" class="btn btn-warning">APPLY NOW</button>
-        <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
@@ -96,32 +172,32 @@
 
 <!-- Скрипт, привязывающий событие click, открывающее модальное окно, к элементам, имеющим класс .btn -->
 <script>
-    $(document).ready(function(){
+    $(document).ready(function () {
 
-        $(".event").click(function() {
+        $(".event").click(function () {
             //открыть модальное окно с id="myModal"
 //            alert('aletr');
             $("#eventModal").modal('show');
 
 //
         });
-//        $('#iventModal').on('shown.bs.modal', function () {
-//            //#myInput - id элемента, которому необходимо установить фокус
-//            $('#btn').focus();
-//        });
+        $('#eventModal').on('shown.bs.modal', function () {
+            //#myInput - id элемента, которому необходимо установить фокус
+            $('#first_name').focus();
+        });
 
-        $(".member").click(function() {
+        $(".member").click(function () {
             //открыть модальное окно с id="myModal"
             $("#memberModal").modal('show');
 
 
         });
-//        $('#memberModal').on('shown.bs.modal', function () {
-//            //#myInput - id элемента, которому необходимо установить фокус
-//            $('#query').focus();
-//        });
+        $('#memberModal').on('shown.bs.modal', function () {
+            //#myInput - id элемента, которому необходимо установить фокус
+            $('#query').focus();
+        });
 
-        $(".mailing_list").click(function() {
+        $(".mailing_list").click(function () {
             //открыть модальное окно с id="myModal"
             $("#mailing_listModal").modal('show');
 
@@ -130,7 +206,7 @@
         $('#mailing_listModal').on('shown.bs.modal', function () {
             //#myInput - id элемента, которому необходимо установить фокус
             $('#first_name').focus();
-        });
+        })
 
 
     });
