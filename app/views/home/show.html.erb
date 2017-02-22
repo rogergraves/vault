@@ -1,8 +1,8 @@
 <div class="wow fadeIn " data-wow-duration="2s">
-<%= render 'shared/nav/carousel_slide' %>
+  <%= render 'shared/nav/carousel_slide' %>
 
-<br>
-<br>
+  <br>
+  <br>
 
 
 </div>
@@ -10,83 +10,80 @@
 <div class="container">
   <div class="col-md-12">
 
-<h1 class="orange wow fadeInLeft" id="About_Us">Let's CO!</h1>
-    <p class=" wow fadeInRight" >The Vault is a collaborative workspace and innovation hub founded on the principle that people work better together. We offer state-of-the-art workspaces, resources, talent, knowledge and networks to help startups grow better and faster.
+    <h1 class="orange wow fadeInLeft" id="About_Us">Let's CO!</h1>
+    <p class=" wow fadeInRight">The Vault is a collaborative workspace and innovation hub founded on the principle that
+      people work better together. We offer state-of-the-art workspaces, resources, talent, knowledge and networks to
+      help startups grow better and faster.
 
-    <br><span class="orange">Email <a href="mailto:concierge@thesfvault.com?subject=To%20schedule%20a%20tour">concierge@thesfvault.com</a> to schedule a tour!</span></p>
+      <br><span class="orange">Email <a href="mailto:concierge@thesfvault.com?subject=To%20schedule%20a%20tour">concierge@thesfvault.com</a> to schedule a tour!</span>
+    </p>
 
 
-    <div class="row justify-content-center wow fadeIn" >
-      <!--<video loop class="slide__video js-video" preload="auto" muted="muted" style="max-width: 80vw;min-width: 80vw; max-height: 45vw; min-height:  45vw; background-color: #000;">-->
-        <!--<source src="<%= asset_path('videos/The_SF_Vault.mp4') %>" type="video/mp4" />-->
-        <!--Your browser does not support the video tag. I suggest you upgrade your browser.-->
-      <!--</video>-->
-      <%=video_tag('The_SF_Vault.mp4', controls: true, autobuffer: true)%>
+    <div class="row justify-content-center wow fadeIn">
+
+
+      <%= video_tag('The_SF_Vault.mp4', poster: 'logo_darck.png', controls: true, autobuffer: true, style: "max-width: 76vw;min-width: 60vw; max-height: 45vw; min-height: 45vw;") %>
 
 
     </div>
 
 
-<h1 class="orange wow fadeInLeft" id="Amenities">Amenities</h1>
+    <h1 class="orange wow fadeInLeft" id="Amenities">Amenities</h1>
     <p class=" wow fadeInRight">The Vault offers a host of amenities to foster creativity, learning & collaboration.</p>
 
 
-
-    <div class="row justify-content-center wow zoomInDown" >
+    <div class="row justify-content-center wow zoomInDown">
       <%= render 'home/amenities' %>
     </div>
 
 
-
-
-<h1 class="orange  wow fadeInLeft" id="Resources">Resources</h1>
-<p class=" wow fadeInRight">The Vault offers a host of resources to foster creativity, learning & collaboration.</p>
+    <h1 class="orange  wow fadeInLeft" id="Resources">Resources</h1>
+    <p class=" wow fadeInRight">The Vault offers a host of resources to foster creativity, learning & collaboration.</p>
 
     <div class="row wow fadeInUp">
 
-    <div class="col-sm-6 col-md-3 col-lg-3">
-      <div class="thumbnail">
-        <div class="item_ico">
-          <%=image_tag(  "icons/ico_11.png",  class:'amenities')%>
-          <div class="caption">
-            <h6>Investment Advisors</h6>
+      <div class="col-sm-6 col-md-3 col-lg-3">
+        <div class="thumbnail">
+          <div class="item_ico">
+            <%= image_tag("icons/ico_11.png", class: 'amenities') %>
+            <div class="caption">
+              <h6>Investment Advisors</h6>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="col-sm-6 col-md-3 col-lg-3">
-    <div class="thumbnail">
-      <div class="item_ico">
-        <%=image_tag(  "icons/ico_14.png",  class:'amenities')%>
-        <div class="caption">
-          <h6>In House Mentors</h6>
-        </div>
-      </div>
-    </div>
-  </div>
-    <div class="col-sm-6 col-md-3 col-lg-3">
-    <div class="thumbnail">
-      <div class="item_ico">
-        <%=image_tag(  "icons/ico_13.png",  class:'amenities')%>
-        <div class="caption">
-          <h6>Document Library</h6>
-        </div>
-      </div>
-    </div>
-  </div>
-    <div class="col-sm-6 col-md-3 col-lg-3">
-      <div class="thumbnail">
-        <div class="item_ico">
-          <%=image_tag(  "icons/ico_12.png",  class:'amenities')%>
-          <div class="caption">
-            <h6>Office Hours</h6>
+      <div class="col-sm-6 col-md-3 col-lg-3">
+        <div class="thumbnail">
+          <div class="item_ico">
+            <%= image_tag("icons/ico_14.png", class: 'amenities') %>
+            <div class="caption">
+              <h6>In House Mentors</h6>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      <div class="col-sm-6 col-md-3 col-lg-3">
+        <div class="thumbnail">
+          <div class="item_ico">
+            <%= image_tag("icons/ico_13.png", class: 'amenities') %>
+            <div class="caption">
+              <h6>Document Library</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3 col-lg-3">
+        <div class="thumbnail">
+          <div class="item_ico">
+            <%= image_tag("icons/ico_12.png", class: 'amenities') %>
+            <div class="caption">
+              <h6>Office Hours</h6>
+            </div>
+          </div>
+        </div>
+      </div>
 
     </div>
-
 
 
   </div>
@@ -94,14 +91,17 @@
 
 
 <div class="wow fadeIn " data-wow-duration="2s">
-<%= image_tag "photos/inside_photo_1.jpg", class: "d-block img-fluid full-screen "%>
+  <%= image_tag "photos/inside_photo_1.jpg", class: "d-block img-fluid full-screen " %>
 </div>
 
 
 <div class="container">
   <div class="col-md-12">
-<h1 class="orange  wow fadeInLeft" id="Location">Location</h1>
-<p class=" wow fadeInRight">The SF Vault is located in Jackson Square - once the frontline of the Barbary Coast - amidst art galleries, boutiques, antique dealers and fine dining. The space boasts a rich history as the original home of the Ghiradelli chocolate factory in 1851. The location, which once served as home to one of San Francisco's most successful companies, has been redesigned once again as a home for innovation.</p>
+    <h1 class="orange  wow fadeInLeft" id="Location">Location</h1>
+    <p class=" wow fadeInRight">The SF Vault is located in Jackson Square - once the frontline of the Barbary Coast -
+      amidst art galleries, boutiques, antique dealers and fine dining. The space boasts a rich history as the original
+      home of the Ghiradelli chocolate factory in 1851. The location, which once served as home to one of San
+      Francisco's most successful companies, has been redesigned once again as a home for innovation.</p>
 
 
     <div class="d-flex justify-content-center wow zoomInDown">
@@ -109,57 +109,57 @@
     </div>
 
 
-<h1 class="orange  wow fadeInLeft"id="Photo_Gallery">Photo Gallery</h1>
+    <h1 class="orange  wow fadeInLeft" id="Photo_Gallery">Photo Gallery</h1>
 
     <div class="d-flex justify-content-center">
 
 
-      <%= render 'home/photo_gallery' %>
+    <%= render 'home/photo_gallery' %>
 
 
     </div>
 
     <h1 class="orange  wow fadeInLeft" id="Events">Events</h1>
     <p class=" wow fadeInRight">Host Your Next Event at The Vault
-    <br>The Vault offers a public event space suitable for a range of events: seminars, panels, workshops, meetups, happy hours and pitch nights.</p>
+      <br>The Vault offers a public event space suitable for a range of events: seminars, panels, workshops, meetups,
+      happy hours and pitch nights.</p>
 
 
     <div class="wow fadeInLeft">
 
-     <ul class="cristal">2,000 sq ft of event space </ul>
+      <ul class="cristal">2,000 sq ft of event space</ul>
 
-     <ul class="cristal">Capacity for 120 standing and 80 seated </ul>
+      <ul class="cristal">Capacity for 120 standing and 80 seated</ul>
 
-     <ul class="cristal">Flexible floor layout </ul>
+      <ul class="cristal">Flexible floor layout</ul>
 
-     <ul class="cristal">80" flat screen TV with HDMI adapter </ul>
+      <ul class="cristal">80" flat screen TV with HDMI adapter</ul>
 
-     <ul class="cristal">Chromecast and Apple TV equipped monitors </ul>
+      <ul class="cristal">Chromecast and Apple TV equipped monitors</ul>
 
-     <ul class="cristal">In house production and marketing assistance </ul>
+      <ul class="cristal">In house production and marketing assistance</ul>
 
-     <ul class="cristal">Use of bar area </ul>
+      <ul class="cristal">Use of bar area</ul>
     </div>
 
     <div class="d-flex justify-content-center">
 
-      <%= link_to 'Events Inquiry', '#event',class:"btn btn-warning event", onclick: "return false"%>
+      <%= link_to 'Events Inquiry', '#event', class: "btn btn-warning event", onclick: "return false" %>
 
     </div>
-        <div class="  wow   zoomInDown">
-            <!--Calendar google-->
-            <iframe src="https://calendar.google.com/calendar/embed?src=thesfvault.com_kgmccvpqtht9s99eiq52vhed8c%40group.calendar.google.com&ctz=America/Los_Angeles" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"> </iframe>
-            <!--End Calendar google-->
+    <div class="  wow   zoomInDown">
+      <!--Calendar google-->
+      <iframe src="https://calendar.google.com/calendar/embed?src=thesfvault.com_kgmccvpqtht9s99eiq52vhed8c%40group.calendar.google.com&ctz=America/Los_Angeles" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+      <!--End Calendar google-->
     </div>
   </div>
 </div>
 <div class="wow fadeIn " data-wow-duration="2s">
-<%= image_tag "photos/inside_photo_2.jpg", class: "d-block img-fluid full-screen wow fadeIn"%>
+  <%= image_tag "photos/inside_photo_2.jpg", class: "d-block img-fluid full-screen wow fadeIn" %>
 </div>
 
 <div class="container">
   <div class="col-md-12">
-
 
 
     <h1 class="orange  wow fadeInLeft" id="Members">Members</h1>
@@ -171,28 +171,26 @@
 
     <div class="d-flex justify-content-center">
       <!--<button type="button" class="btn btn-warning">Member Login</button>-->
-      <%= link_to 'Member Login','http://thesfvault.spaces.nexudus.com/en' ,class:"btn btn-warning"%>
+      <%= link_to 'Member Login', 'http://thesfvault.spaces.nexudus.com/en', class: "btn btn-warning" %>
     </div>
 
 
     <h1 class="orange  wow fadeInLeft" id="From_The_Vault">From The Vault</h1>
 
 
-
-
-
-
-
-    <h1 class="orange wow fadeInLeft" id="Careers" > Careers </h1>
-    <p class=" wow fadeInRight"> <strong>Want to join the team? We are currently recruiting for our Internship Program.</strong>
-      <br> <span class="orange">Send your resume to <a href="mailto:careers@thesfvault.com?subject=Want%20to%20join%20the%20team">careers@thesfvault.com</a></span></p>
+    <h1 class="orange wow fadeInLeft" id="Careers"> Careers </h1>
+    <p class=" wow fadeInRight">
+      <strong>Want to join the team? We are currently recruiting for our Internship Program.</strong>
+      <br>
+      <span class="orange">Send your resume to <a href="mailto:careers@thesfvault.com?subject=Want%20to%20join%20the%20team">careers@thesfvault.com</a></span>
+    </p>
 
   </div>
 </div>
 
 
 <div class="wow fadeIn " data-wow-duration="2s">
-<%= image_tag "photos/inside_photo_3.jpg", class: "d-block img-fluid full-screen"%>
+  <%= image_tag "photos/inside_photo_3.jpg", class: "d-block img-fluid full-screen" %>
 </div>
 
 
@@ -203,9 +201,9 @@
   </div>
 </div>
 
-    <div class="row justify-content-center">
-    <%= render 'home/team' %>
-    </div>
+<div class="row justify-content-center">
+  <%= render 'home/team' %>
+</div>
 
 <div class="container">
   <div class="col-md-12">
@@ -215,22 +213,19 @@
     <p class="orange"></p>
     <p class="orange"></p>
 
-  <div class=" wow fadeInRight">
-    <%=link_to 'Daniel Park','https://www.linkedin.com/in/daniel-park-37a05092/en', target:"_blank" , class:"orange offset-sm-1"%>
-    <%=link_to 'Paul Kallmes','https://www.linkedin.com/in/paul-kallmes-8a0376' , target:"_blank", class:"orange offset-sm-1"%>
-    <%=link_to 'Sean Cho',:root, target:"_blank" , class:"orange offset-sm-1"%>
-  </div>
-
+    <div class=" wow fadeInRight">
+      <%= link_to 'Daniel Park', 'https://www.linkedin.com/in/daniel-park-37a05092/en', target: "_blank", class: "orange offset-sm-1" %>
+      <%= link_to 'Paul Kallmes', 'https://www.linkedin.com/in/paul-kallmes-8a0376', target: "_blank", class: "orange offset-sm-1" %>
+      <%= link_to 'Sean Cho', :root, target: "_blank", class: "orange offset-sm-1" %>
+    </div>
 
 
     <h1 class="orange wow fadeInLeft">Contact</h1>
 
 
     <p class=" wow fadeInRight"><strong>Give us a call at (415) 908-1010</strong></p>
-    <p class=" orange wow fadeInLeft">Email us at <a href="mailto:concierge@thesfvault.com">concierge@thesfvault.com</a></p>
-
-
-
+    <p class=" orange wow fadeInLeft">Email us at <a href="mailto:concierge@thesfvault.com">concierge@thesfvault.com</a>
+    </p>
 
 
   </div>
@@ -240,12 +235,12 @@
 
     var wow = new WOW(
         {
-            boxClass:     'wow',      // animated element css class (default is wow)
+            boxClass: 'wow',      // animated element css class (default is wow)
             animateClass: 'animated', // animation css class (default is animated)
-            offset:       0,          // distance to the element when triggering the animation (default is 0)
-            mobile:       true,       // trigger animations on mobile devices (default is true)
-            live:         true,       // act on asynchronously loaded content (default is true)
-            callback:     function(box) {
+            offset: 0,          // distance to the element when triggering the animation (default is 0)
+            mobile: true,       // trigger animations on mobile devices (default is true)
+            live: true,       // act on asynchronously loaded content (default is true)
+            callback: function (box) {
                 // the callback is fired every time an animation is started
                 // the argument that is passed in is the DOM node being animated
             },
