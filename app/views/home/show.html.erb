@@ -22,7 +22,7 @@
     <div class="row justify-content-center wow fadeIn">
 
 
-      <%= video_tag('The_SF_Vault.mp4', poster: 'logo_darck.png', controls: true, autobuffer: true, style: "max-width: 76vw;min-width: 60vw; max-height: 45vw; min-height: 45vw;") %>
+      <%= video_tag('The_SF_Vault.mp4', poster: 'video_poster.png', controls: true, autobuffer: true, style: "max-width: 76vw;min-width: 60vw; max-height: 40vw; min-height: 40vw;") %>
 
 
     </div>
@@ -200,11 +200,11 @@
 
   </div>
 </div>
-
-<div class="row justify-content-center">
-  <%= render 'home/team' %>
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <%= render 'home/team' %>
+  </div>
 </div>
-
 <div class="container">
   <div class="col-md-12">
     <h1 class="orange  wow fadeInLeft">Advisors</h1>
