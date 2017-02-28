@@ -1,0 +1,55 @@
+<div class="header_img wow fadeIn " style=" background-image: url('photos/inside_photo_1.jpg');width: 100vw;">
+  <%= image_tag "photos/inside_photo_1.jpg", class: "d-block img-fluid full-screen wow fadeIn"%>
+  <!--#,style:"position: absolute; top: 40px; align-content: center" %>-->
+
+  <div class="d-flex justify-content-center">
+    <!--<button type="button" class="btn btn-warning">Member Login</button>-->
+    <%= link_to 'Member Login', 'http://thesfvault.spaces.nexudus.com/en', class: "btn btn-warning" %>
+  </div>
+
+</div>
+<br>
+<div class="container">
+  <div class="col-md-12">
+
+
+    <h1 class="orange  wow fadeInLeft" id="Members">Members</h1>
+
+
+    <div class="row justify-content-center wow zoomInDown">
+      <%= render 'home/members' %>
+    </div>
+
+    <div class="d-flex justify-content-center">
+      <!--<button type="button" class="btn btn-warning">Member Login</button>-->
+      <%= link_to 'Member Login', 'http://thesfvault.spaces.nexudus.com/en', class: "btn btn-warning" %>
+    </div>
+
+
+    <h1 class="orange  wow fadeInLeft" id="From_The_Vault">From The Vault</h1>
+
+  </div>
+</div>
+
+
+
+<script>
+
+    var wow = new WOW(
+        {
+            boxClass: 'wow',      // animated element css class (default is wow)
+            animateClass: 'animated', // animation css class (default is animated)
+            offset: 0,          // distance to the element when triggering the animation (default is 0)
+            mobile: true,       // trigger animations on mobile devices (default is true)
+            live: true,       // act on asynchronously loaded content (default is true)
+            callback: function (box) {
+                // the callback is fired every time an animation is started
+                // the argument that is passed in is the DOM node being animated
+            },
+            scrollContainer: null // optional scroll container selector, otherwise use window
+        }
+    );
+    wow.init();
+
+
+</script>
