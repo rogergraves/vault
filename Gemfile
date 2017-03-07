@@ -19,6 +19,11 @@ end
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.1'
 gem 'animate-rails', '~> 1.0', '>= 1.0.10'
 gem 'wow-rails', '~> 0.0.1'
+gem 'carrierwave', '~> 0.11.2'
+gem 'mini_magick', '~> 4.6', '>= 4.6.1'
+gem 'devise', '~> 4.2'
+
+
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'

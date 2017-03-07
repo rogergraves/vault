@@ -1,0 +1,81 @@
+
+<%= form_for location, html: { multipart: true } do |f| %>
+  <% if location.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(location.errors.count, "error") %> prohibited this location from being saved:</h2>
+
+      <ul>
+      <% location.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label :header_image %>
+    <%= f.file_field :header_image,class:"form-control" %>
+  </div>
+  
+  <div class="form-group">
+    <%= f.label :header_text %>
+    <%= f.text_field :header_text,class:"form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :title %>
+    <%= f.text_field :title,class:"form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :description %>
+    <%= f.text_area :description,class:"form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :gallery %>
+    <%= f.file_field :gallery, multiple: true,class:"form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :map %>
+    <%= f.text_field :map,class:"form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :address %>
+    <%= f.text_field :address,class:"form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :phones %>
+    <%= f.text_field :phones,class:"form-control" %>
+
+    <small  class="form-text text-muted">Separated by a comma.</small>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :info_email %>
+    <%= f.text_field :info_email,class:"form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :support_email %>
+    <%= f.text_field :support_email,class:"form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :order_email %>
+    <%= f.text_field :order_email,class:"form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :prises %>
+    <%= f.text_field :prises,class:"form-control" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit :class=>"btn btn-primary" %> <%= link_to 'Back', :back,:class=>"btn btn-primary" %>
+  </div>
+
+<% end %>

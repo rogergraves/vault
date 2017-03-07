@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Header image:</strong>
+  <%= @location.header_image %>
+</p>
+
+<p>
+  <strong>Header text:</strong>
+  <%= @location.header_text %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @location.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @location.description %>
+</p>
+
+<p>
+  <strong>Gallery:</strong>
+  <%= @location.gallery %>
+</p>
+
+<p>
+  <strong>Map:</strong>
+  <%= @location.map %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @location.address %>
+</p>
+
+<p>
+  <strong>Phones:</strong>
+  <%= @location.phones %>
+</p>
+
+<p>
+  <strong>Info email:</strong>
+  <%= @location.info_email %>
+</p>
+
+<p>
+  <strong>Support email:</strong>
+  <%= @location.support_email %>
+</p>
+
+<p>
+  <strong>Order email:</strong>
+  <%= @location.order_email %>
+</p>
+
+<p>
+  <strong>Prises:</strong>
+  <%= @location.prises %>
+</p>
+
+<%= link_to 'Edit', edit_location_path(@location),:class=>"btn btn-primary" %> |
+<%= link_to 'All locations', locations_path,:class=>"btn btn-primary" %>
