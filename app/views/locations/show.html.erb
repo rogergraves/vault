@@ -1,8 +1,12 @@
-<p id="notice"><%= notice %></p>
+
+<div class="container">
+  <div class="col-md-12">
+    <div class="justify-content-center">
 
 <p>
-  <strong>Header image:</strong>
-  <%= @location.header_image %>
+
+
+  <%=image_tag( @location.header_image.url(:thumb), class:'img-rounded')%>
 </p>
 
 <p>
@@ -62,3 +66,6 @@
 
 <%= link_to 'Edit', edit_location_path(@location),:class=>"btn btn-primary" %> |
 <%= link_to 'All locations', locations_path,:class=>"btn btn-primary" %>
+  </div>
+</div>
+</div>

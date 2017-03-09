@@ -1,7 +1,7 @@
 
 <%= form_for location, html: { multipart: true } do |f| %>
   <% if location.errors.any? %>
-    <div id="error_explanation">
+    <div id="error_explanation" class="alert alert-danger" role="alert">
       <h2><%= pluralize(location.errors.count, "error") %> prohibited this location from being saved:</h2>
 
       <ul>
@@ -20,26 +20,31 @@
   <div class="form-group">
     <%= f.label :header_text %>
     <%= f.text_field :header_text,class:"form-control" %>
+    <small  class="form-text text-muted">Add location header text - slogan. </small>
   </div>
 
   <div class="form-group">
     <%= f.label :title %>
     <%= f.text_field :title,class:"form-control" %>
+    <small  class="form-text text-muted">Add location title.</small>
   </div>
 
   <div class="form-group">
     <%= f.label :description %>
     <%= f.text_area :description,class:"form-control" %>
+    <small  class="form-text text-muted">Add description about location. Example: A collaborative workspace and innovation hub</small>
   </div>
 
   <div class="form-group">
     <%= f.label :gallery %>
     <%= f.file_field :gallery, multiple: true,class:"form-control" %>
+    <small  class="form-text text-muted">Add photos for locations gallery.</small>
   </div>
 
   <div class="form-group">
     <%= f.label :map %>
     <%= f.text_field :map,class:"form-control" %>
+    <small  class="form-text text-muted">Add Google code here.</small>
   </div>
 
   <div class="form-group">
@@ -56,22 +61,26 @@
 
   <div class="form-group">
     <%= f.label :info_email %>
-    <%= f.text_field :info_email,class:"form-control" %>
+    <%= f.email_field :info_email,class:"form-control" %>
+    <small  class="form-text text-muted">Example: info@mail.com</small>
   </div>
 
   <div class="form-group">
     <%= f.label :support_email %>
-    <%= f.text_field :support_email,class:"form-control" %>
+    <%= f.email_field :support_email,class:"form-control" %>
+    <small  class="form-text text-muted">Example: info@mail.com</small>
   </div>
 
   <div class="form-group">
     <%= f.label :order_email %>
-    <%= f.text_field :order_email,class:"form-control" %>
+    <%= f.email_field :order_email,class:"form-control" %>
+    <small  class="form-text text-muted">Example: info@mail.com</small>
   </div>
 
   <div class="form-group">
     <%= f.label :prises %>
     <%= f.text_field :prises,class:"form-control" %>
+    <small  class="form-text text-muted">Example: {"Private Office":"$522", "Dedicated Desk":"$450", "Hot Desk":"$350"}</small>
   </div>
 
   <div class="actions">

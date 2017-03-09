@@ -24,18 +24,18 @@
   <tbody>
     <% @locations.each do |location| %>
       <tr>
-        <td><%= location.header_image %></td>
-        <td><%= location.header_text %></td>
+        <td><%=image_tag( location.header_image.url(:thumb), class:'img-rounded')%></td>
+        <td><%= location.header_text.present? %></td>
         <td><%= location.title %></td>
         <td><%= location.description %></td>
-        <td><%= location.gallery %></td>
-        <td><%= location.map %></td>
+        <td><%= location.gallery.present? %></td>
+        <td><%= location.map.present? %></td>
         <td><%= location.address %></td>
-        <td><%= location.phones %></td>
-        <td><%= location.info_email %></td>
-        <td><%= location.support_email %></td>
-        <td><%= location.order_email %></td>
-        <td><%= location.prises %></td>
+        <td><%= location.phones.present? %></td>
+        <td><%= location.info_email.present? %></td>
+        <td><%= location.support_email.present? %></td>
+        <td><%= location.order_email.present? %></td>
+        <td><%= location.prises.present? %></td>
         <td><%= link_to 'Show', location %></td>
         <td><%= link_to 'Edit', edit_location_path(location) %></td>
         <td><%= link_to 'Destroy', location, method: :delete, data: { confirm: 'Are you sure?' } %></td>
