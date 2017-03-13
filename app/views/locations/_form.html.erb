@@ -37,7 +37,7 @@
 
   <div class="form-group">
     <%= f.label :gallery %>
-    <%= f.file_field :gallery, multiple: true,class:"form-control" %>
+    <%= f.file_field :gallery, multiple: true, accept: "image/jpeg, image/jpg, image/gif, image/png",class:"form-control" %>
     <small  class="form-text text-muted">Add photos for locations gallery.</small>
   </div>
 

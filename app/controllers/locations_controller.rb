@@ -42,6 +42,9 @@ class LocationsController < ApplicationController
   # PATCH/PUT /locations/1
   # PATCH/PUT /locations/1.json
   def update
+    # location_params[:gallery].each do |a|
+    #   puts a
+    # end
     respond_to do |format|
       if @location.update(location_params)
         format.html { redirect_to @location, notice: 'Location was successfully updated.' }
@@ -71,6 +74,6 @@ class LocationsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def location_params
-      params.require(:location).permit(:header_image, :header_text, :title, :description, :map, :address, :phones, :info_email, :support_email, :order_email, :prises, {:gallery=>[:filename]}   )
+      params.require(:location).permit(:header_image, :header_text, :title, :description, :map, :address, :phones, :info_email, :support_email, :order_email, :prises, {gallery: []}   )
     end
 end

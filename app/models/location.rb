@@ -4,7 +4,7 @@ class Location < ApplicationRecord
   validate :json_format
 
   mount_uploader :header_image, HeaderImageUploader
-  mount_uploader :gallery, GalleryUploader
+  mount_uploaders :gallery, GalleryUploader
 
 
   protected
