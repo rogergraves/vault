@@ -26,7 +26,15 @@
 
 <p>
   <strong>Gallery:</strong>
-  <%= @location.gallery %>
+
+
+      <div class="justify-content-center">
+        <% @location.gallery.each do |image| %>
+            <div class=" inline_block">
+              <%=  image_tag(image.url(:thumb), class: 'thumb_show') %>
+            </div>
+        <% end %>
+      </div>
 </p>
 
 <p>

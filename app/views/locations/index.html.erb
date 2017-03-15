@@ -27,10 +27,10 @@
         <td><%=image_tag( location.header_image.url(:thumb), class:'img-rounded')%></td>
         <td><%= location.header_text.present? %></td>
         <td><%= location.title %></td>
-        <td><%= location.description %></td>
+        <td><%= location.description.present? %></td>
         <td><%= location.gallery.present? %></td>
         <td><%= location.map.present? %></td>
-        <td><%= location.address %></td>
+        <td><%= location.address.present? %></td>
         <td><%= location.phones.present? %></td>
         <td><%= location.info_email.present? %></td>
         <td><%= location.support_email.present? %></td>
